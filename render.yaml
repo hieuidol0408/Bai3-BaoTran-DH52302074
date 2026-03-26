@@ -1,0 +1,6 @@
+services:
+  - type: static
+    name: bai3-baotran-dh52302074
+    env: static
+    buildCommand: ""
+    publishDir: "."
