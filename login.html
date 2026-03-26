@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMINA - Đăng Nhập</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Thêm icon cơ bản cho form social -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Bức ảnh nửa bên trái -->
+        <div class="login-image">
+            <img src="images/login-bg.png" alt="Bộ sưu tập giày">
+        </div>
+        
+        <!-- Form đăng nhập nửa bên phải -->
+        <div class="login-form-wrapper">
+            <div class="form-content">
+                <h2>Chào mừng bạn quay lại</h2>
+                <p class="subtitle">Vui lòng nhập thông tin để truy cập bộ sưu tập của bạn.</p>
+                
+                <form class="login-form">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="example@luxury.com" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="label-row">
+                            <label for="password">Mật khẩu</label>
+                            <a href="#" class="forgot-pw">Quên mật khẩu?</a>
+                        </div>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+                    
+                    <button type="submit" class="btn-login">Đăng Nhập</button>
+                    
+                    <div class="divider">
+                        <span>HOẶC ĐĂNG NHẬP VỚI</span>
+                    </div>
+                    
+                    <div class="social-login">
+                        <button type="button" class="btn-social google">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google Logo" class="social-icon">
+                            Google
+                        </button>
+                        <button type="button" class="btn-social facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                            Facebook
+                        </button>
+                    </div>
+                    
+                    <p class="signup-link">
+                        Chưa có tài khoản? <a href="#">Đăng Ký Ngay</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

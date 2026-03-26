@@ -1,0 +1,242 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-primary: #111111;
+    --text-secondary: #777777;
+    --bg-main: #ffffff;
+    --border-color: #e5e5e5;
+    --btn-primary-bg: #f4c2c2; /* Soft pale pink / đào nhạt theo thiết kế */
+    --btn-primary-text: #111111;
+    --accent-red: #ea4335;
+    --font-main: 'Inter', sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-primary);
+    background-color: var(--bg-main);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ================== LAYOUT ================== */
+.login-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.login-image {
+    flex: 0 0 50%; /* Chiếm 50% màn hình bên trái */
+    background-color: #d1a581; /* Fallback màu cam đất */
+    position: relative;
+    overflow: hidden;
+}
+
+.login-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+}
+
+.login-form-wrapper {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-main);
+    padding: 40px;
+}
+
+/* ================== FORM CONTENT ================== */
+.form-content {
+    width: 100%;
+    max-width: 460px; /* Độ rộng tối đa của form */
+}
+
+.form-content h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+}
+
+.input-group {
+    margin-bottom: 24px;
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+.forgot-pw {
+    font-size: 12px;
+    color: #999;
+}
+
+.forgot-pw:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-group input::placeholder {
+    color: #aaaaaa;
+}
+
+.input-group input:focus {
+    border-color: #aaaaaa;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    margin-top: 8px;
+}
+
+.btn-login:hover {
+    opacity: 0.9;
+}
+
+/* ================== DIVIDER ================== */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 32px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.divider span {
+    padding: 0 16px;
+    font-size: 11px;
+    color: #999999;
+    letter-spacing: 1px;
+}
+
+/* ================== SOCIAL LOGIN ================== */
+.social-login {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+
+.btn-social {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: var(--text-primary);
+}
+
+.btn-social:hover {
+    background-color: #f9f9f9;
+}
+
+.social-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.btn-social.facebook i {
+    font-size: 18px;
+    color: #111111; /* Đen tuyền như thiết kế */
+}
+
+/* ================== SIGNUP LINK ================== */
+.signup-link {
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.signup-link a {
+    color: var(--accent-red);
+    font-weight: 500;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 900px) {
+    .login-container {
+        flex-direction: column;
+    }
+    
+    .login-image {
+        flex: 0 0 30vh; /* Giảm chiều cao ảnh trên mobile */
+    }
+    
+    .login-form-wrapper {
+        flex: 1;
+        padding: 40px 20px;
+        align-items: flex-start;
+    }
+    
+    .form-content {
+        margin-top: 20px;
+    }
+}

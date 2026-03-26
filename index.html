@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMINA - Trang Chủ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">LUMINA<span>.</span></div>
+        <nav class="nav-links">
+            <a href="#" class="active">TRANG CHỦ</a>
+            <a href="#">SẢN PHẨM</a>
+            <a href="#">BỘ SƯU TẬP</a>
+            <a href="#">LIÊN HỆ</a>
+        </nav>
+        <div class="nav-icons">
+            <span class="material-symbols-outlined">search</span>
+            <div class="cart-icon">
+                <span class="material-symbols-outlined">shopping_bag</span>
+                <span class="badge">0</span>
+            </div>
+            <span class="material-symbols-outlined">person</span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="subtitle">LUXURY SELECTION 2024</div>
+            <h1 class="title">Bộ sưu tập<br>mùa hè</h1>
+            <p class="description">Sự kết hợp hoàn hảo giữa nét thanh lịch cổ điển<br>và phong cách hiện đại tinh tế.</p>
+            <a href="#" class="btn btn-dark">KHÁM PHÁ NGAY</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-shoe.png" alt="Bộ sưu tập mùa hè">
+        </div>
+    </section>
+
+    <!-- New Products Section -->
+    <section class="new-products">
+        <div class="section-header">
+            <h2>Sản phẩm mới</h2>
+            <a href="#" class="view-all">Xem tất cả</a>
+        </div>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/product-1.png" alt="Elegance Stiletto Rose">
+                    <button class="wishlist-btn"><span class="material-symbols-outlined">favorite</span></button>
+                    <!-- Tùy hình có viền hoặc nền -->
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Elegance Stiletto Rose</h3>
+                    <div class="product-price">2,450,000đ</div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image black-bg">
+                    <img src="images/product-2.png" alt="Cloud Walk Sneaker">
+                    <button class="wishlist-btn active"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span></button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Cloud Walk Sneaker</h3>
+                    <div class="product-price">1,890,000đ</div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/product-3.png" alt="Diva Strappy Sandal">
+                    <button class="wishlist-btn"><span class="material-symbols-outlined">favorite</span></button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Diva Strappy Sandal</h3>
+                    <div class="product-price">1,650,000đ</div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/product-4.png" alt="Vogue Classic Heel">
+                    <button class="wishlist-btn"><span class="material-symbols-outlined">favorite</span></button>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Vogue Classic Heel</h3>
+                    <div class="product-price">3,200,000đ</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="category-card" style="background-image: url('images/cat-1.png')">
+            <h3 class="category-title">GIÀY CAO GÓT</h3>
+        </div>
+        <div class="category-card" style="background-image: url('images/cat-2.png')">
+            <h3 class="category-title">SNEAKER</h3>
+        </div>
+        <div class="category-card" style="background-image: url('images/cat-3.png')">
+            <h3 class="category-title">SANDAL</h3>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <div class="footer-logo">LUMINA<span>.</span></div>
+                <p>Định nghĩa lại vẻ đẹp của bước chân với<br>những thiết kế cao cấp nhất.</p>
+            </div>
+            <div class="footer-col links-col">
+                <h4>Liên kết</h4>
+                <ul>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Quy định đổi trả</a></li>
+                    <li><a href="#">Hệ thống cửa hàng</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-col">
+                <h4>Hỗ trợ khách hàng</h4>
+                <ul>
+                    <li>Hotline: 1900 123 456</li>
+                    <li>Email: hello@lumina.vn</li>
+                    <li>Địa chỉ: Phường Chánh Hưng, TP. HCM</li>
+                </ul>
+            </div>
+            <div class="footer-col subscribe-col">
+                <h4>Đăng ký nhận tin</h4>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Email của bạn" required>
+                    <button type="submit">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 LUMINA LUXURY FOOTWEAR. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+</body>
+</html>
